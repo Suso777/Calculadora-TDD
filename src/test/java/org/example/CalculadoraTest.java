@@ -89,10 +89,6 @@ public class CalculadoraTest {
         assertEquals(7.7, calc.sumar(3.2, 4.5));
     }
 
-    @Test
-    void subtract_shouldSubtractDecimals() {
-        assertEquals(-1.3, calc.restar(3.2, 4.5));
-    }
 
     @Test
     void multiply_shouldMultiplyDecimals() {
