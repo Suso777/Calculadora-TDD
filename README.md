@@ -1,67 +1,88 @@
-# Calculator TDD Project
+Calculator TDD Project
+Descripción
+Este proyecto es una aplicación de Calculadora desarrollada utilizando principios de Desarrollo Guiado por Pruebas (TDD).
+El objetivo es asegurar que la aplicación sea robusta, mantenible y cumpla con los requisitos mediante la creación de pruebas antes de implementar la lógica.
+Incluye operaciones básicas, funciones avanzadas (si se implementan) y una estructura clara orientada a buenas prácticas.
 
-## Description
-This project is a Calculator application developed using Test-Driven Development (TDD) principles. The goal is to ensure that the application is robust and meets user requirements through rigorous testing before any implementation.
+Características
+- Operaciones aritméticas básicas: suma, resta, multiplicación y división.
+- Funciones avanzadas: raíz cuadrada, exponenciación (si se añaden).
+- Menú interactivo por consola.
+- Cobertura de pruebas completa con JUnit 5.
+- Código estructurado siguiendo principios SOLID.
 
-## Features
-- Basic arithmetic operations: addition, subtraction, multiplication, division.
-- Advanced functions: square root, exponentiation.
-- User-friendly interface (if applicable).
-- Comprehensive test coverage.
+Instalación
+Para instalar el proyecto, sigue estos pasos:
+- Clona el repositorio:
+git clone https://github.com/Suso777/Calculadora-TDD.git
+- Entra en el directorio del proyecto:
+cd Calculadora-TDD
+- Compila el proyecto con Maven:
+mvn clean install
 
-## Installation
-To install the project, follow these steps:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Suso777/Calculadora-TDD.git
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd Calculadora-TDD
-   ```
-3. Install dependencies (if any):
-   ```bash
-   npm install
-   ```
 
-## Usage
-To use the calculator, run the application with the following command:
-```bash
-node index.js
-```
 
-### Code Example
-Here’s how to perform basic calculations:
-```javascript
-const calculator = require('./calculator');
+Uso
+Para ejecutar la aplicación, utiliza:
+mvn exec:java -Dexec.mainClass="org.example.Main"
 
-console.log(calculator.add(2, 3)); // 5
-console.log(calculator.subtract(5, 2)); // 3
-```
 
-## Testing
-Run the tests using the following command:
-```bash
-npm test
-```
-Ensure that all tests pass before deploying or releasing the application.
+Ejemplo de ejecución
+=== CALCULADORA TDD ===
 
-## Project Structure
-```
+1. Sumar
+2. Restar
+3. Multiplicar
+4. Dividir
+5. Salir
+Opción: 1
+
+Introduce el primer número: 10
+Introduce el segundo número: 5
+
+Resultado: 15
+
+
+
+Ejemplo visual (GIF)
+(GIF ilustrativo de un menú interactivo en consola)
+https://media.giphy.com/media/gF6jKxM8od8xO/giphy.gif
+
+Testing
+Ejecuta los tests con:
+mvn test
+
+
+Asegúrate de que todas las pruebas pasen antes de desplegar o publicar la aplicación.
+GIF representando tests pasando
+https://media.giphy.com/media/g9582DNuQppxC/giphy.gif
+Captura real
+Añade aquí tu captura de IntelliJ con todos los tests en verde.
+
+
+Estructura del proyecto
 Calculadora-TDD/
-├── src/
-│   └── calculator.js
-├── test/
-│   └── calculator.test.js
+├── pom.xml
 ├── README.md
-└── package.json
-```
+└── src
+    ├── main
+    │   └── java
+    │       └── org
+    │           └── example
+    │               ├── Calculadora.java
+    │               └── Main.java
+    └── test
+        └── java
+            └── org
+                └── example
+                    └── CalculadoraTest.java
 
-## Screenshots
-![Calculator Screenshot](path/to/screenshot.png)
 
-> Add your screenshots here to showcase your application.
 
----
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+Capturas de pantalla
+[Parece que el resultado no era seguro para mostrar. ¡Cambiemos de enfoque y probemos algo diferente!]
+Añade aquí tus capturas para mostrar el funcionamiento de la aplicación.
+
+
+Licencia
+Este proyecto está bajo la licencia MIT — consulta el archivo LICENSE.md para más detalles.
