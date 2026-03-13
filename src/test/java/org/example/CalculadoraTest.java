@@ -104,5 +104,4 @@ public class CalculadoraTest {
     void divide_shouldThrowExceptionWithLargeNumbers() {
         assertThrows(IllegalArgumentException.class, () -> calc.dividir(1000, 0));
     }
-
 }
